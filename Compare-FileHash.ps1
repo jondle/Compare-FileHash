@@ -47,7 +47,7 @@ FA95FB748B34D470A7CFA5E3C1C8FA1163E2DC340CD5A60F7ECE9DC963ECDF88 Calculated From
 Matched: True
 
 .LINK
-http://www.fabrikam.com/extension.html
+https://github.com/jondle/Compare-FileHash
 #>
 [CmdletBinding()]
 Param (
