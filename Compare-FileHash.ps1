@@ -99,15 +99,6 @@ Function Get-VerboseOutput {
     $data = @(
         @{InputFrom=$ParamSetName;Hash=$InputHash},
         @{InputFrom='Calculated From File';Hash=$CalculatedHash}) | ForEach-Object { New-Object object | Add-Member -NotePropertyMembers $_ -PassThru }
-#    $obj = New-Object -TypeName psobject
-#    $obj | Add-Member -MemberType NoteProperty -Name 'InputFrom' -Value $ParamSetName
-#    $obj | Add-Member -MemberType NoteProperty -Name 'Hash' -Value $InputHash
-#    $data += $obj
-
-#    $obj = New-Object -TypeName psobject
-#    $obj | Add-Member -MemberType NoteProperty -Name 'InputFrom' -Value 'Calculated From File'
-#    $obj | Add-Member -MemberType NoteProperty -Name 'Hash' -Value $CalculatedHash
-#    $data += $obj
 
     $data
 }
